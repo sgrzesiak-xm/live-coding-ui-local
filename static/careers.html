@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Browse local career opportunities and open positions."
+    >
+    <title>Career Opportunities | ABC</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand" aria-label="ABC Careers">
+          <span class="brand-mark" aria-hidden="true">ABC</span>
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-name">Careers</span>
+        </div>
+        <p class="header-caption">Find your next opportunity</p>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">CAREERS AT ABC</p>
+            <h1 id="hero-title">Bring your ideas to work.</h1>
+            <p class="hero-description">
+              Explore opportunities across our teams and find a role where you can make an impact.
+            </p>
+          </div>
+          <div class="hero-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+
+        <section class="positions-section" aria-labelledby="positions-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-eyebrow">YOUR NEXT CHAPTER</p>
+              <h2 id="positions-title">Open positions</h2>
+              <p class="section-description">Explore roles across our global teams.</p>
+            </div>
+            <div class="search-control">
+              <label for="position-search">Search positions</label>
+              <div class="search-input-wrap">
+                <span class="search-icon" aria-hidden="true"></span>
+                <input
+                  id="position-search"
+                  name="search"
+                  type="search"
+                  placeholder="Search by role, team, or location"
+                  autocomplete="off"
+                  aria-controls="job-list"
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="results-heading">
+            <p id="results-summary" role="status" aria-live="polite"></p>
+          </div>
+
+          <div id="job-list" class="job-list" role="list" aria-label="Open positions"></div>
+          <p id="empty-state" class="empty-state" role="status" hidden>
+            No open positions match your search.
+          </p>
+          <nav id="pagination" class="pagination" aria-label="Job result pages"></nav>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>ABC Careers</span>
+        <span>Local careers search preview</span>
+      </footer>
+    </div>
+
+    <dialog
+      id="cookie-banner"
+      class="cookie-banner"
+      aria-modal="true"
+      aria-labelledby="cookie-title"
+      aria-describedby="cookie-description"
+    >
+      <div class="cookie-copy">
+        <h2 id="cookie-title">Your privacy matters</h2>
+        <p id="cookie-description">
+          We use cookies to remember your preferences and improve your experience.
+        </p>
+      </div>
+      <button id="accept-all" class="accept-button" type="button" autofocus>Accept All</button>
+    </dialog>
+  </body>
+</html>
